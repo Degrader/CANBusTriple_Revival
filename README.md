@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="assets/logo.png" alt="CANBus Triple Revival logo" width="200">
-</p>
+<img src="assets/logo.png" alt="CANBus Triple Revival logo" width="200">
 
 # CANBus Triple — PlatformIO port
 
