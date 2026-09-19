@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="CANBus Triple Revival logo" width="200">
+</p>
+
 # CANBus Triple — PlatformIO port
 
 This is the original [CANBus-Triple/CANBus-Triple](https://github.com/CANBus-Triple/CANBus-Triple)
