@@ -39,18 +39,6 @@ package the original repo shipped.
 - **Mazda example**: kept as reference under `examples/CANBusTriple_Mazda/`,
   not built by default.
 
-## ⚠️ Important — this has not been compile-tested
-
-I don't have network access or an AVR toolchain in this environment, so I
-could not actually run a build here. I read through the whole firmware and
-the SPI/EEPROM/watchdog calls it makes are all still valid against the
-current AVR core, and the board/variant JSON was translated field-for-field
-from the original `boards.txt`/`platform.txt`, so this should build — but
-"should" is doing some work in that sentence. **Please build it locally and
-send me the output** (especially any errors) so we can fix anything that
-doesn't compile cleanly on the first try. This is a normal part of a port
-like this, not a sign something went wrong.
-
 ## Building
 
 1. Install [PlatformIO](https://platformio.org/install) (via VS Code
@@ -90,10 +78,3 @@ src/                        Main firmware (unchanged)
 examples/CANBusTriple_Mazda/  Mazda-specific example, for reference
 extras/bootloader/          Prebuilt Caterina bootloader hex, fallback only
 ```
-
-## Adding features on top
-
-Once you've confirmed this builds and flashes cleanly, this is a normal
-PlatformIO project — add new `.cpp`/`.h` files to `src/`, or new libraries
-to `lib/`, same as any other PlatformIO Arduino-framework project. Come back
-here with what you want to add and we can go from there.
